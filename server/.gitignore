@@ -1,0 +1,16 @@
+
+# dependencies
+node_modules/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# production
+build/
+build/Release
+
+
+# Logs
+logs
+*.log
+npm-debug.log*

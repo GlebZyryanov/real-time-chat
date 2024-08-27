@@ -1,0 +1,89 @@
+.login-container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .login-page{
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.login-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+}
+.form-control{
+  margin:5px auto;
+  width: 100%;
+  padding: 5px;
+}
+.login-btns{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  button{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.login-card{
+  .user-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+  }
+}
+
+.user-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  &:last-child {
+    border-bottom: none;
+  }
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.user-list li.selected {
+  background-color: #3498db;
+  color: #fff;
+}

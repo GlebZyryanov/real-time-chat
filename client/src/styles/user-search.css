@@ -1,0 +1,87 @@
+.user-search-card{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+
+  border-radius: 5px;
+  margin: 5px;
+  flex-direction: column;
+  max-width: 100%;
+
+
+  .user-search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+  }
+}
+.user-search-form{
+  .form-control{
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+
+  }
+  button{
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+}
+.user-search-card{
+  .user-list {
+
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    max-height: 350px;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    top: 100%;
+
+    left: 0;
+    z-index: 100;
+  }
+}
+.user-list li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+
+  &:last-child {
+    border-bottom: none;
+  }
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+.user-list li.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
+.user-list{
+  button{
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+}
